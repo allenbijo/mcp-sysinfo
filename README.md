@@ -1,0 +1,1 @@
+Simple MCP server to get system info on windows
