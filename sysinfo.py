@@ -1,5 +1,4 @@
 from typing import Any
-import httpx
 from mcp.server.fastmcp import FastMCP
 from fetch_info import get_system_info
 
