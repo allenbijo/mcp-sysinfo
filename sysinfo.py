@@ -13,7 +13,6 @@ async def get_sysinfo() -> str:
     CPU Information such as Processor, Physical Cores, Logical Cores
     Memory Information such as Total Memory, Available Memory, Used Memory, Memory Utilization
     Disk Information such as Total Disk Space, Used Disk Space, Free Disk Space, Disk Space Utilization
-    GPU Information such as ID, Name, Driver, GPU Memory Total, GPU Memory Free, GPU Memory Used, GPU Load, GPU Temperature
     """
     data = await get_system_info()
     return data

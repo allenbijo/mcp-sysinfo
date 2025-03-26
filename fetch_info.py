@@ -40,21 +40,21 @@ async def get_system_info():
     output.append(f"Free Disk Space: {disk_info.free} bytes")
     output.append(f"Disk Space Utilization: {disk_info.percent}%")
 
-    gpus = GPUtil.getGPUs()
+    # gpus = GPUtil.getGPUs()
 
-    if not gpus:
-        output.append("No GPU detected.")
-    else:
-        for i, gpu in enumerate(gpus):
-            output.append(f"\nGPU {i + 1} Information:")
-            output.append(f"ID: {gpu.id}")
-            output.append(f"Name: {gpu.name}")
-            output.append(f"Driver: {gpu.driver}")
-            output.append(f"GPU Memory Total: {gpu.memoryTotal} MB")
-            output.append(f"GPU Memory Free: {gpu.memoryFree} MB")
-            output.append(f"GPU Memory Used: {gpu.memoryUsed} MB")
-            output.append(f"GPU Load: {gpu.load * 100}%")
-            output.append(f"GPU Temperature: {gpu.temperature}°C")
+    # if not gpus:
+    #     output.append("No GPU detected.")
+    # else:
+    #     for i, gpu in enumerate(gpus):
+    #         output.append(f"\nGPU {i + 1} Information:")
+    #         output.append(f"ID: {gpu.id}")
+    #         output.append(f"Name: {gpu.name}")
+    #         output.append(f"Driver: {gpu.driver}")
+    #         output.append(f"GPU Memory Total: {gpu.memoryTotal} MB")
+    #         output.append(f"GPU Memory Free: {gpu.memoryFree} MB")
+    #         output.append(f"GPU Memory Used: {gpu.memoryUsed} MB")
+    #         output.append(f"GPU Load: {gpu.load * 100}%")
+    #         output.append(f"GPU Temperature: {gpu.temperature}°C")
 
     return "\n".join(output)
 
