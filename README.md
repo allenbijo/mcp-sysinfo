@@ -25,15 +25,6 @@ The **MCP System Info Server** is a lightweight and efficient server that provid
   - Used Disk Space
   - Free Disk Space
   - Disk Space Utilization
-- **GPU Information**
-  - GPU ID
-  - GPU Name
-  - Driver Version
-  - Total GPU Memory
-  - Free GPU Memory
-  - Used GPU Memory
-  - GPU Load
-  - GPU Temperature
 
 ## Installation
 1. Clone the repository:
